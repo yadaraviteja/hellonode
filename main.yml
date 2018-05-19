@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  tasks:
+  - name: creating task definition for jenkins
+    ecs_taskdefinition:
+      aws_access_key: ""
+      aws_secret_key: ""
+      region: us-east-1
+      containers:
+      - name: Jenkins
+        cpu: 10
+        essential: true
+        image: "jenkins"
+        memory: 300
+        portMappings:
+        - containerPort: 8080
+          hostPort: 8080
+        logConfiguration:
+          logDriver: awslogs
+          options:
+            awslogs-group: ecs
+            awslogs-region: us-east-1
+      state: present
+      family: "{{ name }}"
