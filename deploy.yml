@@ -1,5 +1,5 @@
 ---
-- hosts: loaclhost
+- hosts: all
   tasks: 
   - name: creating a task for ecs cluster
     ecs_task:
