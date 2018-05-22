@@ -18,8 +18,8 @@
           hostPort: 8080
         logConfiguration:
           logDriver: awslogs
-            options:
-              awslogs-group: ecs
-              awslogs-region: us-east-1
+          options:
+            awslogs-group: ecs
+            awslogs-region: us-east-1
       state: present
       family: "{{ name }}"
