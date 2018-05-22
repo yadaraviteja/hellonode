@@ -1,5 +1,5 @@
 ---
-- hosts: all 
+- hosts: loaclhost
   connection: local
   tasks:
   - name: creating task for ecs cluster
