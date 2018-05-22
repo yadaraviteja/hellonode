@@ -3,13 +3,13 @@
   connection: local
   tasks: 
   - name: creating a task for ecs cluster
-    ecs_task:
-      aws_access_key: "{{ access }}"
-      aws_secret_key: "{{ secret }}"
-      region: us-east-1
-      operation: run
-      cluster: raviteja
-      task_definition: "{{ name }}"
-      count: 1
-      started_by: ansible_user
+  ecs_task:
+    aws_access_key: "{{ access }}"
+    aws_secret_key: "{{ secret }}"
+    region: us-east-1
+    operation: run
+    cluster: raviteja
+    task_definition: "{{ name }}"
+    count: 1
+    started_by: ansible_user
   
