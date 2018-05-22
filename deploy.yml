@@ -1,8 +1,8 @@
 ---
 - hosts: localhost
   connection: local
-  tasks: 
-  - name: creating a task for ecs cluster
+  tasks:
+  - name: create task of ecs cluster
     ecs_task:
       aws_access_key: "{{ access }}"
       aws_secret_key: "{{ secret }}"
@@ -12,4 +12,3 @@
       task_definition: "{{ name }}"
       count: 1
       started_by: ansible_user
-  
