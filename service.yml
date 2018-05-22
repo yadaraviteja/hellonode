@@ -6,7 +6,7 @@
     ecs_service:
       aws_access_key: "{{ access }}"
       aws_secret_key: "{{ secret }}"
-      region: us-east-1d
+      region: us-east-1
       state: present
       name: test-service
       cluster: raviteja
