@@ -1,5 +1,5 @@
 ---
-- hosts: local host
+- hosts: localhost
   connection: local
   tasks: 
   - name: creating a task for ecs cluster
