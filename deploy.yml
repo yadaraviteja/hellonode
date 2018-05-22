@@ -6,7 +6,7 @@
     ecs_task:
       aws_access_key: "{{ access }}"
       aws_secret_key: "{{ secret }}"
-      region: us-east-1d
+      region: us-east-1
       operation: run
       cluster: raviteja
       task_definition: "{{ name }}"
