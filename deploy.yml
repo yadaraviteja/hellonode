@@ -1,8 +1,6 @@
 ---
 - hosts: loaclhost
   connection: local
-  tasks:
-  - name: creating task for ecs cluster
   ecs_task:
     aws_access_key: "{{ access }}"
     aws_secret_key: "{{ secret }}"
