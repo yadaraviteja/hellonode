@@ -6,12 +6,12 @@
     ecs_service:
       aws_access_key: "{{ access }}"
       aws_secret_key: "{{ secret }}"
-      region: us-east-1
+      region: us-east-1d
       state: present
       name: test-service
       cluster: raviteja
       task_definition: "{{ name }}"
-      desired_count: 3
+      desired_task: 3
       deployment_configuration:
         minimum_healthy_percent: 75
         maximum_percent: 150
