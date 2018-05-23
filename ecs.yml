@@ -1,0 +1,8 @@
+---
+
+- include: main.yml
+    hosts: localhosts
+    connection: local
+- include: service.yml
+    hosts: localhosts
+    connection: loacal
