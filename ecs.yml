@@ -1,7 +1,7 @@
 ---
 - include: main.yml
-    hosts: localhosts
+    hosts: localhost
     connection: local
 - include: service.yml
-    hosts: localhosts
+    hosts: localhost
     connection: loacal
