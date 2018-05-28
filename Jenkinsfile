@@ -1,4 +1,4 @@
-node ('ecs') {
+node {
     def app
 
     stage('Clone repository') {
