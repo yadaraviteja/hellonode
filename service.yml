@@ -9,7 +9,7 @@
       region: us-east-1
       state: present
       name: test-service
-      cluster: raviteja
+      cluster: Devops
       task_definition: "{{ name }}"
       desired_count: 3
       deployment_configuration:
