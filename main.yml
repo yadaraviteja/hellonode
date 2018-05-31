@@ -8,10 +8,10 @@
       aws_secret_key: "{{ secret }}"
       region: us-east-1
       containers:
-      - name: hellonode
+      - name: Jenkins
         cpu: 10
         essential: true
-        image: "hellonode"
+        image: "jenkins"
         memory: 300
         portMappings:
         - containerPort: 8080
