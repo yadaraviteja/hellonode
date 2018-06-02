@@ -8,18 +8,19 @@
       aws_secret_key: "{{ secret }}"
       region: us-east-1
       containers:
-      - name: Jenkins
-        cpu: 10
+      - name: sample-app
+        cpu: 512
         essential: true
-        image: "jenkins"
-        memory: 300
+        image: "yadaraviteja/node-web-app:latest"
+        memory: 512
         portMappings:
         - containerPort: 8080
-          hostPort: 8080
+          hostPort: 49163
         logConfiguration:
           logDriver: awslogs
           options:
-            awslogs-group: ecs
+            awslogs-group: ecs/new-node
             awslogs-region: us-east-1
+      task_role_arn: "arn:aws:iam::318896727843:role/ecsTaskExecutionRole"
       state: present
       family: "{{ name }}"
