@@ -26,5 +26,8 @@ node {
     stage('docker push') {
         
         sh "docker images"
+        sh " docker login -u yadaraviteja -p raviteja1216# https://registry.hub.docker.com "
+        sh " docker tag yadaraviteja/newbuilds yadaraviteja/newbuilds:${env.BUILD_NUMBER}"
+        sh "docker push yadaraviteja/newbuilds:${env.BUILD_NUMBER}"
     }
 }
