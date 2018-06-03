@@ -15,7 +15,7 @@
         memory: 512
         portMappings:
         - containerPort: 8080
-          hostPort: 49163
+          hostPort: "{{ port }}"
         logConfiguration:
           logDriver: awslogs
           options:
