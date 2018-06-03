@@ -1,23 +1,14 @@
 {
-  "name": "getintodevops-hellonode",
+  "name": "docker_web_app",
   "version": "1.0.0",
-  "description": "A Hello World HTTP server",
-  "main": "main.js",
+  "description": "Node.js on Docker",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
   "scripts": {
-    "test": "node test.js",
-    "start": "node main.js"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/getintodevops/masterclass-codeexamples/"
-  },
-  "keywords": [
-    "node",
-    "docker",
-    "dockerfile"
-  ],
-  "author": "miiro@getintodevops.com",
-  "license": "ISC",
-  "devDependencies": { "test": ">=0.6.0" }
+  "dependencies": {
+    "express": "^4.16.1"
+  }
 }
 
