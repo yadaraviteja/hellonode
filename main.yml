@@ -15,12 +15,12 @@
         memory: 512
         portMappings:
         - containerPort: 8080
-          hostPort: "{{ port }}"
-        logConfiguration:
-          logDriver: awslogs
-          options:
-            awslogs-group: ecs/new-node
-            awslogs-region: us-east-1
-      task_role_arn: "arn:aws:iam::318896727843:role/ecsTaskExecutionRole"
+          hostPort: 49164
+        #logConfiguration:
+          #logDriver: awslogs
+          #options:
+            #awslogs-group: ecs/new-node
+            #awslogs-region: us-east-1
+      #task_role_arn: "arn:aws:iam::318896727843:role/ecsTaskExecutionRole"
       state: present
       family: "{{ name }}"
