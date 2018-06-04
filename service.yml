@@ -8,7 +8,7 @@
       aws_secret_key: "{{ secret }}"
       region: us-east-1
       state: present
-      name: test-service
+      name: node
       cluster: Devops
       task_definition: "{{ name }}"
       desired_count: 3
