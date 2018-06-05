@@ -11,7 +11,7 @@
       - name: sample-app
         cpu: 512
         essential: true
-        image: "yadaraviteja/node-web-app:latest"
+        image: "yadaraviteja/hellonode"
         memory: 512
         portMappings:
         - containerPort: 8080
