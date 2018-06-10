@@ -9,7 +9,7 @@
       region: us-east-1
       state: present
       name: node
-      cluster: raviteja
+      cluster: DEV
       task_definition: "{{ name }}"
       desired_count: 3
       deployment_configuration:
