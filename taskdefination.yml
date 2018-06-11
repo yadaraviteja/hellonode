@@ -4,8 +4,8 @@
   tasks:
   - name: creating task definition for jenkins
     ecs_taskdefinition:
-      aws_access_key: "AKIAIGTCNJJQ63SXETEA"
-      aws_secret_key: "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"
+      aws_access_key: "access"
+      aws_secret_key: "secret"
       region: us-east-1
       containers:
       - name: sample-app
